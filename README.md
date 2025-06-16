@@ -14,5 +14,3 @@ Este projeto fornece configuração centralizada para todos os microserviços at
 - Spring Boot 3.1+
 - Maven 3.9+
 - Git ou GitHub com repositório de configurações
-
-Repositório: [config-server](https://github.com/marcellopedrosa/config-server)
