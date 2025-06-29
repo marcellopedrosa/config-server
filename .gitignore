@@ -1,0 +1,53 @@
+# Ignorar arquivos e pastas do Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Ignorar arquivos comuns de compilação Java
+*.class
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignorar arquivos de IDEs
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# Ignorar arquivos de teste temporários
+*.swp
+*.bak
+*.tmp
+
+# Ignorar diretórios de target dos módulos
+target/
+domain/target/
+application/target/
+infrastructure/target/

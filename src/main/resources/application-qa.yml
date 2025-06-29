@@ -13,14 +13,7 @@ spring:
           search-paths: .  # Habilita leitura da raiz do repositório
 
 management:
-  endpoint:
-    gateway:
-      access: unrestricted
   endpoints:
     web:
       exposure:
-        include: "*"
-
-logging:
-  level:
-    '[org.springframework.cloud.config.server]': DEBUG
+      include: "*"
