@@ -5,9 +5,9 @@ spring:
     gateway:
       routes:
         - id: external-api
-          uri: http://http://sped.rfb.gov.br/
+          uri: http://sped.rfb.gov.br/
           predicates:
-            - Path=/api/externa/**
+            - Path=/sped/**
           filters:
             - StripPrefix=2
 
