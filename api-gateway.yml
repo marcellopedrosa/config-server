@@ -4,12 +4,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: external-api
-          uri: http://sped.rfb.gov.br/
+        - id: teste
+          uri: https://httpbin.org
           predicates:
-            - Path=/sped/**
+          - Path=/get/**
           filters:
-            - StripPrefix=2
+          - StripPrefix=2
 
 management:
   endpoints:
