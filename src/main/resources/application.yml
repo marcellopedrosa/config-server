@@ -10,9 +10,9 @@ spring:
         git:
           uri: https://github.com/marcellopedrosa/config-server.git
           default-label: main
-          #search-paths: configs
-      fail-fast: true
-      
+          search-paths: .  # Habilita leitura da raiz do repositório
+        fail-fast: true
+
 management:
   endpoints:
     web:
