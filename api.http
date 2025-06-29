@@ -1,0 +1,2 @@
+### Ativar a capacidade de atualizar as rotas sem reiniciar o Gateway, usando o endpoint:
+POST http://localhost:8080/actuator/refresh
