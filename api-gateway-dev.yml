@@ -4,12 +4,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: teste
-          uri: https://httpbin.org/get
+        - id: testeHttpbin
+          uri: https://httpbin.org
           predicates:
           - Path=/teste
           filters:
-          - RewritePath=/teste, /
+          - SetPath=/get
 
 management:
   endpoints:
