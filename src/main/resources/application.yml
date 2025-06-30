@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/marcellopedrosa/config-server.git
+          uri: ${CONFIG_SERVER_GIT_URI} #URL do repositório Git que contém os arquivos de configuração
           default-label: main
           search-paths: .  #habilita leitura da raiz do repositório
           force-pull: true #forçar o carregamento do arquivo de configuração mesmo se o config-server estiver com cache

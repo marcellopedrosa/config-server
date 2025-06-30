@@ -5,11 +5,11 @@ spring:
     gateway:
       routes:
         - id: teste
-          uri: https://httpbin.org
+          uri: https://httpbin.org/get
           predicates:
-          - Path=/get/**
+          - Path=/teste
           filters:
-          - StripPrefix=2
+          - RewritePath=/teste, /
 
 management:
   endpoints:
