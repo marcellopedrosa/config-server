@@ -15,20 +15,20 @@ spring:
         git:
           uri: ${CONFIG_SERVER_GIT_URI} #URL do repositório Git que contém os arquivos de configuração
           default-label: main
-          search-paths: .  #habilita leitura da raiz do repositório
+          search-paths: api-gateway-routes  #habilita leitura da raiz do repositório
           force-pull: true #forçar o carregamento do arquivo de configuração mesmo se o config-server estiver com cache
           timeout: 10000 #tempo de espera para o config-server responder
-          #   username: ${CONFIG_SERVER_GIT_USERNAME}
-          #   password: ${CONFIG_SERVER_GIT_PASSWORD}
+          username: ${CONFIG_SERVER_GIT_USERNAME}
+          password: ${CONFIG_SERVER_GIT_PASSWORD}
 
 management:
-  endpoint:
-    gateway:
-      access: unrestricted
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: refresh, routes
+  endpoint:
+    refresh:
+      access: unrestricted
 
 logging:
   level:
