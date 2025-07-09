@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: config-server
+  
   cloud:
     gateway:
       discovery:
@@ -15,7 +16,7 @@ spring:
         git:
           uri: ${CONFIG_SERVER_GIT_URI}
           default-label: main
-          search-paths: .
+          search-paths: config-server/**
           force-pull: true
           timeout: 10000
           username: ${CONFIG_SERVER_GIT_USERNAME}
