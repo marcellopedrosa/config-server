@@ -1,2 +1,5 @@
 ### Busca por profile do projeto no config-server no caso: api-gateway-dev.yml
 GET http://localhost:8888/api-gateway/dev
+
+### Busca por profile do projeto no teste-service no caso: teste-service-dev.yml
+GET http://localhost:8888/teste-service/dev
